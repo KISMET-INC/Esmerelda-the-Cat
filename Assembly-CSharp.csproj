@@ -76,7 +76,6 @@
     <Compile Include="Assets\Scripts\Gameplay Scripts\OptionsController.cs" />
     <Compile Include="Assets\Scripts\Joystick Scripts\JoystickScripts.cs" />
     <Compile Include="Assets\Scripts\JUNK CODE.cs" />
-    <Compile Include="Assets\Scripts\MyCoroutine\MyCoroutine.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerBounds.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerJoystickScript.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerScore.cs" />
