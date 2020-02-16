@@ -61,7 +61,7 @@ public class PlayerBounds : MonoBehaviour
     void SetMinAndMax()
     {
         //Vector3 bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        maxX = 3.5f;
-        minX = -3.4f;
+        maxX = 6f;
+        minX = -6f;
     }
 } // END PLAYER BOUNDS CLASS
