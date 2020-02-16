@@ -1,0 +1,98 @@
+Junk Code
+Positio Player
+     /* for (int i = 0; i < badBranches.Length; i++)
+        {
+            if (badBranches[i].transform.position.y == 5f)
+            {
+                Vector3 t = badBranches[i].transform.position;
+                badBranches[i].transform.position = new Vector3(goodBranches[0].transform.position.x,
+                                                                goodBranches[0].transform.position.y,
+                                                                goodBranches[0].transform.position.z);
+
+                goodBranches[0].transform.position = t;
+            }
+
+
+        }*/
+player score bad branch
+   //gameObject.SetActive(false);
+                //cameraScript.moveCamera = false;
+                //CountScore = false;
+                // GameplayController.instance.GameOverShowScorePlayerDied(scoreCount, treatCount);
+                //  determineHighestScore(scoreCount);
+
+
+ //gameObject.SetActive(false);
+               // cameraScript.moveCamera = false;
+
+
+                //float cameraSpeed = CameraScript.instance.getCameraSpeed();
+               // GameManager.instance.newCameraSpeed = cameraSpeed;
+               // Debug.Log("cameraspeed - " + cameraSpeed);
+
+               // GameplayController.instance.GameOverShowScore(scoreCount, treatCount);
+  // GameManager.instance.gameStartedFromMainMenu = false;
+
+               // GameManager.instance.score = scoreCount;
+  //GameManager.instance.treatScore = treatCount;
+
+
+               // CountScore = false;
+
+/////////////////////////////////////
+
+    int shuffleInts()
+    {
+        int scaleValue;
+        int random = Random.Range(0, 2);
+        if (random == 0)
+        {
+            scaleValue = -1;
+        }
+        else
+        {
+            scaleValue = 1;
+        }
+
+        return scaleValue;
+    }//shuffleInts
+
+    void calculateBranchType(int i, float positionX)
+    {
+        if (positionX > 2f || positionX < 3f)
+        {
+            branches[i].GetComponent<SpriteRenderer>().sprite = healthyBranch;
+
+        }
+        else
+        {
+            if (positionX < -2f || positionX > -3f)
+            {
+                branches[i].GetComponent<SpriteRenderer>().sprite = healthyBranch;
+            }
+        }
+    }
+
+    float calculateAppropriateScaleX(int i, float positionX)
+    {
+        float scaleValue = -12;
+        float stretch = 12;
+
+
+            if (positionX > 0)
+            {
+                stretch = Random.Range(1.5f, 2.5f);
+                scaleValue = -stretch;
+            }
+
+
+            else if (positionX < 0)
+            {
+                stretch = Random.Range(1.5f, 2.5f);
+                scaleValue = stretch;
+            }
+
+       // calculateBranchType(i, positionX);
+
+        return scaleValue;
+    }
